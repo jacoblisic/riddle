@@ -1,9 +1,13 @@
 /*****
 Colors
+#ffffff
+#d1d5e0
+#414af4
+#27292d
+
 #3fa9f5
 #00a4c5
 #3d948b
-#ffffff
 *****/
 
 * {
@@ -12,45 +16,23 @@ Colors
 	box-sizing: border-box;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
-	font-family: 'Roboto', sans-serif;
-}
-
-ul, nav {
-	list-style: none;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
-}
-
-header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: #ffffff;
-	padding: 35px 100px 0;
-  background-color: #00a4c5;
+	font-family: 'Work Sans', sans-serif;
 }
 
 header nav {
 	display: flex;
 }
 
-header nav li {
+header nav li a {
 	margin: 0 15px;
   font-size: 18px;
   letter-spacing: .5px;
+	transition: all 0.3s ease;
+	font-weight: 300;
 }
 
-header nav li:hover {
-  color: #ffffff;
+header nav li a:hover {
+  color: #414af4;
 }
 
 @media (max-width: 1000px) {
@@ -67,4 +49,231 @@ header nav li:hover {
 	header h2 {
 		margin-bottom: 15px;
 	}
+}
+
+
+/*****
+Header
+*****/
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	color: #27292d;
+	padding: 30px 50px 30px;
+  background-color: #ffffff;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.logo {
+	width: 40px;
+	margin-right: 80px;
+}
+
+ul, nav {
+	font-weight: 500;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+body {
+	background-color: #27292d;
+}
+
+main {
+	padding: 100px;
+}
+
+main h1 {
+	color: #ffffff;
+	font-weight: 800;
+	font-size: 80px;
+	text-align: center;
+	padding: 30px;
+	margin-top: 60px;
+}
+
+main h1 span {
+	color: #414af4;
+}
+
+main h3 {
+	font-weight: 300;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.head-container {
+	margin-bottom: 5em;
+}
+
+/*****
+Email Made Easy
+*****/
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	border-radius: 15px;
+	padding: 3.2em;
+}
+
+/* Title */
+.container h2 {
+	text-transform: uppercase;
+	font-size: 40px;
+	letter-spacing: .5px;
+	text-align: center;
+	padding: .5em;
+}
+
+.container h2 span {
+	color: #414af4;
+}
+
+/* Description */
+.container p {
+	font-weight: 300;
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.75;
+	letter-spacing: .5px;
+}
+
+.container p span {
+	color: #414af4;
+}
+
+.trust-in {
+	font-weight: 400;
+	border-bottom: 2px solid #414af4;
+}
+
+/*****
+Features
+*****/
+
+.features {
+	margin-top: 3em;
+}
+
+.features h2 {
+	font-size: 40px;
+	letter-spacing: .5px;
+	text-align: center;
+	padding: .5em;
+	color: #ffffff;
+	margin-bottom: .5em;
+	margin-top: 2em;
+}
+
+.features-headline {
+	border-bottom: 10px solid #414af4;
+}
+
+.comma {
+	color: #414af4;
+}
+
+.column-wrapper {
+	display: flex;
+	flex: wrap column;
+	justify-content: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+	max-width: 1000px;
+  width: 30%;
+  padding: 2em;
+	height: 300px;
+	background-color: #d1d5e0;
+	margin: 10px;
+	border-radius: 15px;
+}
+
+.column h3 {
+	font-weight: 800;
+	font-size: 24px;
+	color: #27292d;
+	padding: 10px 0px 15px;
+}
+
+.column p {
+	font-weight: 300;
+	letter-spacing: .5px;
+	margin-bottom: 2em;
+	line-height: 1.35;
+}
+
+.column p span {
+	color: #414af4;
+	font-weight: 400;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* See it in action button */
+.features-btn {
+	text-transform: uppercase;
+	font-weight: 800;
+	padding: 10px 10px;
+	color: #ffffff;
+	background-color: #414af4;
+	transition: all 0.3s ease;
+}
+
+.features-btn:hover {
+	color: #414af4;
+	background-color: #ffffff;
+}
+
+/* Learn More */
+.learn-more {
+	padding: 4em;
+	text-align: center;
+}
+
+.learn-more-btn {
+	padding: 15px 15px;
+	color: #414af4;
+	background-color: #ffffff;
+	font-size: 20px;
+	font-weight: 800;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+	color: #ffffff;
+	background-color: #414af4;
 }
